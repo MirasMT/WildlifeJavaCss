@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us — Wildlife Encyclopedia</title>
+    <link rel="icon" type="image/png" href="images/duck_icon.png">
+
+    <!-- Подключаем Bootstrap CSS для валидации и стилей -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <div class="page-container">
+
+        <aside class="vine-border vine-left"></aside>
+
+        <div class="main-content">
+
+            <header class="header">
+
+                <div class="logo">
+                    <img src="images/duck_icon.png" alt="logo" class="logo-img">
+                    <span>Wildlife Encyclopedia</span>
+                </div>
+
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">HOME</a>
+                    <a href="services.html" class="nav-link">CATALOG</a>
+                    <a href="about.html" class="nav-link">ABOUT</a>
+                    <a href="contact.html" class="nav-link active">CONTACT</a>
+                </nav>
+
+            </header>
+
+
+            <main>
+
+                <section class="hero">
+
+                    <h1>GET IN TOUCH</h1>
+
+                    <p class="hero-subtitle">
+                        Have a question about our species catalog,
+                        conservation programs, or a custom research
+                        trip? Send us a message below.
+                    </p>
+
+                </section>
+
+
+                <div class="pixel-divider"></div>
+
+
+                <section class="info-section">
+
+                    <h2 class="section-title">
+                        CONTACT FORM
+                    </h2>
+
+                    <div class="featured-card">
+
+                        <div class="featured-info">
+                            <form class="contact-form needs-validation" action="demo-result.html" method="get" novalidate>
+
+    <label for="name">NAME</label>
+    <input type="text" id="name" name="name" placeholder="Your name" minlength="2" required>
+    <div class="invalid-feedback text-danger small mt-1">
+        Please enter at least 2 characters.
+    </div>
+
+    <label for="email">EMAIL</label>
+    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+    <div class="invalid-feedback text-danger small mt-1">
+        Please enter a valid email.
+    </div>
+
+    <label for="subject">SUBJECT</label>
+    <input type="text" id="subject" name="subject" placeholder="What is this about?">
+
+    <label for="message">MESSAGE</label>
+    <textarea id="message" name="message" rows="6" placeholder="Write your message here..." minlength="10" maxlength="500" required></textarea>
+    <div class="invalid-feedback text-danger small mt-1">
+        Message must be from 10 to 500 characters.
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+        SEND MESSAGE
+    </button>
+
+</form>
+
+                            
+
+                        </div>
+
+                        <div class="featured-img-box">
+
+                            <img
+                                src="images/wildlife-contact.png"
+                                alt="A pair of foxes resting in a forest clearing"
+                                class="junimo-img"
+                            >
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <div class="pixel-divider"></div>
+
+
+                <section class="info-section">
+
+                    <h2 class="section-title">
+                        OTHER WAYS TO REACH US
+                    </h2>
+
+                    <div class="stats-grid">
+
+                        <article class="stats-card">
+                            📧<br>
+                            HELLO@WILDLIFEENCYCLOPEDIA.COM
+                        </article>
+
+                        <article class="stats-card">
+                            📞<br>
+                            +7 (700) 123-45-67
+                        </article>
+
+                        <article class="stats-card">
+                            📍<br>
+                            ASTANA, KAZAKHSTAN
+                        </article>
+
+                        <article class="stats-card">
+                            🕒<br>
+                            MON–FRI, 9:00–18:00
+                        </article>
+
+                    </div>
+
+                </section>
+
+            </main>
+
+
+            <footer class="footer">
+
+                <div class="footer-middle">
+
+                    <div class="footer-col">
+
+                        <div class="footer-logo">
+                            <img src="images/duck_icon.png" class="logo">
+                            <span>Wildlife Encyclopedia</span>
+                        </div>
+
+                    </div>
+
+                    <div class="footer-col">
+
+                        <h4>EXPLORE</h4>
+
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+
+                            <li>
+                                <a href="services.html">Catalog</a>
+                            </li>
+
+                            <li>
+                                <a href="about.html">About</a>
+                            </li>
+
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="footer-col">
+
+                        <h4>ABOUT</h4>
+
+                        <p>
+                            Discover wildlife.<br>
+                            Learn about nature.<br>
+                            Protect our planet.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="footer-bottom">
+                    © 2026 WILDLIFE ENCYCLOPEDIA
+                </div>
+
+            </footer>
+
+        </div>
+
+        <aside class="vine-border vine-right"></aside>
+
+    </div>
+
+    <script>
+    (function () {
+        'use strict'
+        const forms = document.querySelectorAll('.needs-validation')
+        Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+                form.classList.add('was-validated')
+            }, false)
+        })
+    })()
+</script>
+
+</body>
+
+</html>
